@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, sans-serif; /* Change la police de caractère */
     margin: 0;
     padding: 0;
 }
@@ -7,10 +7,27 @@ body {
 .container {
     padding: 20px;
     text-align: center;
+    position: relative; /* Ajoute une position relative au conteneur */
+}
+
+.container2 {
+    padding: 25px;
+    text-align: center;
+    position: relative; /* Ajoute une position relative au conteneur */
+}
+
+.container3 {
+    padding: 30px;
+    text-align: center;
+    position: relative; /* Ajoute une position relative au conteneur */
 }
 
 .buttons {
     margin-top: 20px;
+    position: absolute; /* Change la position des boutons */
+    bottom: 0; /* Place les boutons en bas */
+    left: 50%; /* Centre les boutons horizontalement */
+    transform: translateX(-50%); /* Ajuste le centrage des boutons */
 }
 
 button {
@@ -18,19 +35,20 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #007bff;
+    background-color: #3e41df; /* Change la couleur de fond des boutons */
     color: #fff;
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ajoute une ombre aux boutons */
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #3e41df; /* Change la couleur de fond des boutons au survol */
 }
 
 button.active {
-    background-color: #dc3545;
+    background-color: #a8a9f5;
 }
 
 .links-container {
@@ -50,15 +68,15 @@ a {
 }
 
 img {
-    width: 100px;
-    height: 100px;
+    width: 80px; /* Réduit la largeur des images */
+    height: 80px; /* Réduit la hauteur des images */
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
 footer {
     position: fixed;
-    bottom: 0;
+    bottom: 100px; /* Augmente la position du footer */
     width: 100%;
     background-color: #f8f9fa;
     padding: 10px 0;
@@ -74,5 +92,24 @@ footer {
 }
 
 .clock, .greeting {
-    font-size: 32px; /* Ajuste la taille de la police pour le bonjour et l'heure */
+    font-size: 48px; /* Change la taille de la police pour le bonjour et l'heure */
+    color: #000000; /* Change la couleur du texte */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Ajoute une ombre au texte */
+    transform: scale(0); /* Réduit la taille du texte à 0 */
+    animation: zoom 2s forwards; /* Ajoute une animation de zoom au texte */
+}
+
+.greeting {
+    background: linear-gradient(to right, #000000, #000000, #000000, #000000, #2e2e2d, #5c5c5b); /* Change l'ordre des couleurs du dégradé */
+    -webkit-background-clip: text; /* Applique le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Rend le texte transparent */
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0); /* Démarre l'animation avec une taille de 0 */
+    }
+    to {
+        transform: scale(1); /* Termine l'animation avec une taille de 100% */
+    }
 }
