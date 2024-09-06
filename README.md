@@ -2,7 +2,7 @@
 
 Ce projet est un Intranet simple conçu pour une personne âgée qui souhaitait avoir un accès rapide à ses sites Web préférés et qui avait besoin d'une interface conviviale pour gérer leurs raccourcis.
 
-![Exemple :)](capture_ecran_v1.1.png)
+![Exemple :](capture_ecran_v1.1.png)
 
 ## Fonctionnalités 🚀
 

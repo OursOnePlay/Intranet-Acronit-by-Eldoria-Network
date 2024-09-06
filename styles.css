@@ -76,7 +76,7 @@ img {
 
 footer {
     position: fixed;
-    bottom: 100px; /* Augmente la position du footer */
+    bottom: 0px; /* Augmente la position du footer */
     width: 100%;
     background-color: #f8f9fa;
     padding: 10px 0;
