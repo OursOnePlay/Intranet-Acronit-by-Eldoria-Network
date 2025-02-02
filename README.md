@@ -1,38 +1,63 @@
-# Intranet 👴
+# Intranet Aconit ✨
 
-Ce projet est un Intranet simple conçu pour une personne âgée qui souhaitait avoir un accès rapide à ses sites Web préférés et qui avait besoin d'une interface conviviale pour gérer leurs raccourcis.
+Ce projet est une plateforme Intranet moderne, initialement conçue pour une personne âgée souhaitant un accès rapide et intuitif à ses sites Web favoris. L'interface a évolué pour offrir une expérience utilisateur plus raffinée et adaptable à un usage personnel ou professionnel.
 
-![Exemple :](capture_ecran_v1.1.png)
+![Ancienne Interface](capture_ecran_v1.1.png)
+![Nouvelle Interface](capture_ecran_v2.0.png)
 
-## Fonctionnalités 🚀
+## Nouveautés de l'Interface 🔄
 
-- Ajout de raccourcis vers des sites Web personnalisés.
-- Suppression de raccourcis.
-- Personnalisation du nom d'utilisateur.
-- Affichage de l'heure et du message de bienvenue en fonction de l'heure de la journée.
-- Stockage local des raccourcis et des préférences de l'utilisateur.
+La nouvelle version de l'interface s'inspire du design épuré et moderne d'Apple, avec une apparence sombre et soignée. Elle offre une organisation optimale pour une utilisation en environnement professionnel.
 
-## Utilisation 💡
+## Fonctionnalités Améliorées 🚀
 
-- L'utilisateur peut ajouter un raccourci en cliquant sur le bouton "Ajouter un raccourci" et en entrant l'URL du site Web, le nom de l'icône (facultatif), l'URL de l'icône (facultatif) et une description du site (facultatif).
-- Les raccourcis ajoutés seront affichés sous forme d'icônes avec des descriptions.
-- L'utilisateur peut supprimer un raccourci en activant le mode de suppression en cliquant sur le bouton "Supprimer un raccourci" et en cliquant sur le raccourci à supprimer.
-- L'utilisateur peut changer son nom d'utilisateur en cliquant sur le bouton "Changer le nom" et en saisissant un nouveau nom.
+- **Ajout de raccourcis personnalisés** : Créez des accès directs vers vos sites Web préférés.
+- **Suppression de raccourcis** : Gérez facilement vos raccourcis.
+- **Modification du nom d'utilisateur** : Adaptez l'interface à votre identité.
+- **Affichage dynamique** : Heure actuelle et message de bienvenue personnalisé.
+- **Sauvegarde et importation de raccourcis** : Gérez vos configurations de manière flexible.
+- **Mot de passe protégé** : Un mot de passe par défaut "intra123?", modifiable dans `script.js`, est hashé grâce à `crypto-js`.
+- **Mode sombre 🌌** : Une interface soignée, élégante et optimisée pour le confort visuel.
+- **Thèmes secrets 🤫** : Des thèmes sont cachés dans le code de Aconit.
+
+## Utilisation 🔧
+
+### Ajouter un raccourci :
+- Cliquez sur le bouton "Ajouter un raccourci".
+- Entrez les informations suivantes :
+  - URL du site Web
+  - Nom de l'icône (facultatif)
+  - URL de l'icône (facultatif)
+  - Titre (facultatif)
+- Validez pour afficher le raccourci sous forme d'icône.
+
+### Suppression d'un raccourci :
+- Cliquez sur "Supprimer un raccourci" et cliquez sur celui à supprimer.
+
+### Personnalisation :
+- Modifiez le nom d'utilisateur avec "Changer le nom".
+
+### Gestion des raccourcis :
+- Sauvegardez et importez vos raccourcis avec les options prévues.
+
+### Sécurité :
+- Un mot de passe par défaut "intra123?" est présent et modifiable dans `script.js`. Ce mot de passe est hashé à l'aide de `crypto-js`.
 
 ## Installation 🛠️
 
 1. Téléchargez tous les fichiers et placez-les dans un dossier.
-2. Ouvrez votre navigateur et tapez le chemin d'accès au fichier HTML. Par exemple : `file:///C:/Users/Ours/OneDrive/Documents/Intranet%20par%20Esteban/Intranet.html`. Assurez-vous d'utiliser l'URL locale appropriée pour votre système d'exploitation.
-3. Vous pourrez l'exécuter avec FireFox, Chrome, Opera, etc.
+2. Ouvrez votre navigateur et tapez le chemin d'accès au fichier HTML. Par exemple : `file:///C:/Users/Intranet%20Aconit/Intranet.html`. Adaptez l'URL à votre système d'exploitation.
+3. Compatible avec FireFox, Chrome, Opera, etc.
 
 ## Auteur 👨‍💻
 
-Ce projet a été développé par Esteban dans le cadre d'une assistance aux personnes âgées ayant besoin d'un accès rapide et simple à leurs sites Web préférés.
+Ce projet a été développé par **Esteban** dans le cadre d'une initiative visant à simplifier l'accès aux sites Web pour des utilisateurs ayant des besoins spécifiques.
 
-## Contributions 🤝
+## Contribution et Crédits 🤝
 
-Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez ouvrir une issue pour discuter des changements proposés.
+Les contributions sont les bienvenues ! Merci de me créditer en cas de modification ou d'amélioration du projet. Pour toute suggestion, veuillez ouvrir une issue.
 
-## Licence 📝
+## Licence 🔖
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+

@@ -1,29 +1,86 @@
+<!-- Intranet.html -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intranet</title>
+    <title>Aconit 🌺</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="icons/favicon.png">
 </head>
 <body>
-    <div class="container2">
-        <div id="greeting" class="greeting"></div>
-        <div id="clock" class="clock"></div> 
-    </div>
-    <div class="container">
-        <div id="linksContainer" class="links-container"></div>
-        <div class="empty-message">Il n'y a aucun raccourci ! Contactez un administrateur si besoin, ou appuyez sur 'Ajouter un Raccourci' 😯.</div>
-    </div>
-    
-    <div class="container3">
-        <div class="buttons">
-            <button id="addLinkButton">Ajouter un raccourci</button>
-            <button id="deleteButton">Supprimer un raccourci</button>
-            <button id="changeNameButton">Changer le nom</button>
+    <!-- Modals -->
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 id="modalTitle">Titre</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button id="modalConfirm" class="mac-btn">Confirmer</button>
+                <button id="modalCancel" class="mac-btn">Annuler</button>
+            </div>
         </div>
     </div>
-    <footer>Fait avec ❤️ par Esteban</footer>
+
+    <div id="alertOverlay" class="alert-overlay">
+        <div class="alert-modal">
+            <div class="alert-header">
+                <h3 id="alertTitle">Alerte</h3>
+            </div>
+            <div class="alert-body">
+                <p id="alertMessage"></p>
+            </div>
+            <div class="alert-footer">
+                <button id="alertOk" class="mac-btn">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interface principale -->
+    <div class="menu-bar">
+        <div class="apple-menu">
+            <span>Intranet Aconit 🌺 by Eldoria Network</span>
+            <div class="menu-items">
+                <button id="themeToggle" class="mac-btn">🌙</button>
+                <button id="modifyButton" class="mac-btn"><img src="icons/Security-Settings.png" class="icon" alt="settings">Modifier</button>
+                <div class="separator"></div>
+                <button id="addLinkButton" class="mac-btn" disabled><img src="icons/Add.png" class="icon" alt="add">Ajouter</button>
+                <button id="deleteButton" class="mac-btn" disabled><img src="icons/Remove.png" class="icon" alt="remove">Supprimer</button>
+                <button id="saveButton" class="mac-btn" disabled><img src="icons/Save.png" class="icon" alt="save">Sauvegarder</button>
+                <button id="importButton" class="mac-btn" disabled><img src="icons/Documents.png" class="icon" alt="import">Importer</button>
+                <button id="changeNameButton" class="mac-btn" disabled><img src="icons/Person.png" class="icon" alt="person">Profil</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="greeting" class="greeting"></div>
+        <div id="clock" class="clock"></div>
+        
+        <div class="spotlight-search">
+            <input id="searchInput" type="text" placeholder="Rechercher avec Brave ou Google...">
+            <button id="searchButton" class="mac-btn">🦁</button>
+            <button id="searchButton2" class="mac-btn">🔎</button>
+        </div>
+        <div class="empty-message">
+            <p>Aucun raccourci trouvé</p>
+        </div>
+        <div id="linksContainer" class="links-grid"></div>
+    </div>
+
+    <footer class="mac-footer">
+        <div class="footer-content">
+            <div class="mac-controls">
+                <div class="control red"></div>
+                <div class="control yellow"></div>
+                <div class="control green"></div>
+            </div>
+        </div>
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>
