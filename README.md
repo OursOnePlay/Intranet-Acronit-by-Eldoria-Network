@@ -2,7 +2,9 @@
 
 Ce projet est une plateforme Intranet moderne, initialement conçue pour une personne âgée souhaitant un accès rapide et intuitif à ses sites Web favoris. L'interface a évolué pour offrir une expérience utilisateur plus raffinée et adaptable à un usage personnel ou professionnel.
 
+**Ancienne Interface** 
 ![Ancienne Interface](capture_ecran_v1.1.png)
+**Nouvelle Interface** 
 ![Nouvelle Interface](capture_ecran_v2.0.png)
 
 ## Nouveautés de l'Interface 🔄
